@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js dom events</title>
+</head>
+<body>
+    <h1>Dom dom da babu sab goo</h1>
+
+    
+    <button onclick="console.log(71);">Cleack me now</button>
+    <button onclick="console.log(10);">Cleack me right now</button>
+    <button onclick="console.log('now no');">Cleack me right now</button>
+    <!-- js file -->
+    <button id="boks">MaKe pink</button>
+    <button id="green">make green</button>
+    <button id="red">make red</button>
+    <script src="js/events.js"></script>
+    <script>
+        const goodoBaba = document.getElementById('boks');
+        goodoBaba.addEventListener('click',maKepink);
+
+        function maKepink() {
+            document.body.style.backgroundColor = 'pink';
+        }
+        const make = document.getElementById('green');
+        make.addEventListener('click', function(){
+           document.body.style.backgroundColor  = 'green'; 
+        })
+        document.getElementById('red').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'red';
+        })
+    </script>
+</body>
+</html>
